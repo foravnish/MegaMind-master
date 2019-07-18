@@ -258,6 +258,7 @@ public class HomeFragment extends Fragment  {
                 startActivity(Intent.createChooser(i, "Share"));
 
 
+
 //                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 //                    final String shareBody = "Hey, \n" + "Check out MegaMind App on Android | Earn Upto 2 Lakhs Per Month Like Salary By Using Your Social Network Whatsapp, Facebook,Instagram,YouTube etc.Install the App Via this https://play.google.com/store/apps/details?id=megamindlons.app.megamind&referrer=" + MyPrefrences.getMyRefrel(getActivity())+" MegaMind App Download Kar Aur Life Ko Easy Kar.";
 //                    Intent i = new Intent(Intent.ACTION_SEND);

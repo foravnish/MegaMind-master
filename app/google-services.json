@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "911511999223",
+    "firebase_url": "https://mega-mind-41921.firebaseio.com",
+    "project_id": "mega-mind-41921",
+    "storage_bucket": "mega-mind-41921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911511999223:android:faad132bbd6d6970",
+        "android_client_info": {
+          "package_name": "megamindlons.app.megamind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911511999223-l43a49fgdqpcl1u539dbo2tjp2dri23t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR20nus53X1v-MImVHc-FPHEqNJfz2JwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911511999223-l43a49fgdqpcl1u539dbo2tjp2dri23t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-6929351250387553~3181690869"
+    }
+  ],
+  "configuration_version": "1"
+}

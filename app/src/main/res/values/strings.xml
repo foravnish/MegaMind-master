@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MegaMind</string>
+    <string name="title_activity_home">HomeAct</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password_quote">Please provide mobile number to reset MPIN</string>
+
+    <string name="input_pin">INPUT PIN</string>
+    <string name="desc_pin">Tutorial input 4 digits PIN\nwww.androidbie.com</string>
+    <string name="msg_complete_your_pin">Please complete your PIN</string>
+    <string name="msg_open_your_next_activity">Done! Open your next activity</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string name="press_back_button_to_exit">Press back again to exit</string>
+
+    <string name="err_check_interner">There is no active internet connection</string>
+    <string name="err_check_mobile">Please enter mobile no</string>
+
+    <string name="id_initial">ca-app-pub-6929351250387553~3181690869</string>
+    <string name="id_add_unit">ca-app-pub-6929351250387553/1818252700</string>
+
+    <!--<string name="id_add_unit2">ca-app-pub-6929351250387553/9618304374</string>-->
+
+    <!--<string name="id_initial">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--<string name="id_add_unit">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="tnc">I Have read to <u>Terms &amp; Condition</u></string>
+
+</resources>

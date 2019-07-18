@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activittres.AddBankAcount">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strock_edit"
+                    android:hint="Bank Name*"
+                    android:inputType="textCapCharacters"
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/bankHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strock_edit"
+                    android:hint="Holder Name*"
+                    android:inputType="textCapCharacters"
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/acountNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strock_edit"
+                    android:hint="Account No*"
+                    android:inputType="number"
+
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/branchName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strock_edit"
+                    android:hint="Branch Name*"
+                    android:inputType="textCapCharacters"
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ifscCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strock_edit"
+                    android:hint="IFSC Code*"
+                    android:inputType="textCapCharacters"
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/paytmNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/strock_edit"
+                    android:hint="Paytm Number"
+                    android:maxLength="10"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/submitDetail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="SUBMIT"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/muli_semibold"
+                android:background="@drawable/submit_btn"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+</layout>

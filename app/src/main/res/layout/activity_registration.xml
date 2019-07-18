@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Activittres.Registration">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:src="@drawable/splash"
+           android:layout_gravity="center"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/namePerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grayText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:textColor="#444"
+                android:gravity="center"
+                android:paddingRight="4dp"
+                android:fontFamily="@font/muli"
+                android:text="Name*"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/refferalId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grayText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:textColor="#444"
+                android:gravity="center"
+                android:paddingRight="4dp"
+                android:fontFamily="@font/muli"
+                android:text="Enter your friend refer code"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#fff"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:textColor="@color/grayText"/>-->
+
+                <Spinner
+                    android:id="@+id/spinGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Date"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:textColor="#444"
+                android:paddingRight="4dp"
+                android:fontFamily="@font/muli"
+                android:text="Gender*"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#fff"
+            android:textColor="#444"
+            android:textSize="16dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:fontFamily="@font/muli"
+            android:text="Date of Birth*"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:weightSum="3">
+
+
+
+                <Spinner
+                    android:id="@+id/spinDate"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/strock_editbox"
+                    android:text="Date"/>
+
+            <Spinner
+                android:id="@+id/spinMonth"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/strock_editbox"
+                android:text="Date"/>
+
+            <Spinner
+                android:id="@+id/spinYear"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/strock_editbox"
+                android:text="Date"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/emailD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grayText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textColor="#444"
+                android:textSize="16dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="Email"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/mobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:maxLength="10"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grayText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:textColor="#444"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="Mobile Number*"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <Spinner
+                    android:id="@+id/spinState"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Date"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:textColor="#444"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="State*"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <Spinner
+                    android:id="@+id/spinCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Date"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="3dp"
+                android:textColor="#444"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="City*"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+
+                <Spinner
+                    android:id="@+id/spinOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:text="Date"/>
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/occupation"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#fff"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:textColor="@color/grayText"/>-->
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="3dp"
+                android:textColor="#444"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="Occupation*"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/panCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grayText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="3dp"
+                android:textColor="#444"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="PAN Card"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/strock_editbox"
+                android:layout_margin="10dp">
+                <EditText
+                    android:id="@+id/aadharCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grayText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"
+                android:textSize="16dp"
+                android:paddingLeft="3dp"
+                android:textColor="#444"
+                android:paddingRight="3dp"
+                android:fontFamily="@font/muli"
+                android:text="Aadhar Card"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:textColor="#444"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:buttonTint="#bbb"
+                android:textColor="@color/blue"/>
+
+
+            <TextView
+                android:id="@+id/tncBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:fontFamily="@font/muli"
+                android:text="@string/tnc"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submitLogin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="SUBMIT"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/muli_semibold"
+            android:background="@drawable/submit_btn"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

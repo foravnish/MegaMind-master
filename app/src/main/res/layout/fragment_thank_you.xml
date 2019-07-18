@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_image"
+    tools:context=".Activittres.Login">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:src="@drawable/splash"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="20dp"
+            android:textColor="#111"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/muli_bold"
+            android:text="Thank you lead added successfully."/>
+
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Add new Lead"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/muli_semibold"
+            android:background="@color/red"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/deshboard"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Dashboard"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/muli_semibold"
+            android:background="@color/red"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
+</layout>

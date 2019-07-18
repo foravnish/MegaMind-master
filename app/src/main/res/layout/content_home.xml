@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:layout_alignParentTop="true">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"></FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:windowSoftInputMode="adjustResize">
+
+
+            <RelativeLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:background="#fdfdfd"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30999999"></View>
+
+                <TextView
+                    android:id="@+id/dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableTint="#aaa"
+                    android:drawableTop="@drawable/ic_dashboard"
+                    android:foregroundTint="@color/white"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:text="Dashboard"
+                    android:textColor="@color/black"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/dashboard"
+                    android:drawableTint="#aaa"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/offer_icon"
+                    android:gravity="center"
+                    android:text="Offers"
+                    android:textColor="@color/black"
+                    android:textSize="11dp" />
+
+
+                <TextView
+                    android:id="@+id/MyLead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableTint="#aaa"
+                    android:drawableTop="@drawable/ic_add_lead"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:text="My Leads"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/mProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTint="#aaa"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/service_icon"
+                    android:gravity="center"
+                    android:text="Services"
+                    android:textColor="@color/black"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/addLead"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="153dp"
+                android:background="#00ffffff"
+                android:src="@drawable/addcion"
+                android:tint="@color/red"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                android:paddingBottom="5dp"
+                app:civ_circle_background_color="@color/red"
+                app:civ_fill_color="@color/red" />
+        </RelativeLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

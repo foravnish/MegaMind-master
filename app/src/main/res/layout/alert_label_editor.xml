@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/strock_pop"
+            android:orientation="vertical">
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/catAll"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_gravity="top"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="All"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold" />-->
+
+
+                    <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/checkBoxMain"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_centerVertical="true" />&ndash;&gt;-->
+            <!--</RelativeLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    ads:cardCornerRadius="3dp"
+                    ads:cardElevation="3dp">
+
+
+                    <TextView
+                        android:id="@+id/catAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="left|center"
+                        android:gravity="center"
+                        android:fontFamily="@font/muli"
+                        android:text="All"/>
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gridView"
+                android:layout_width="300dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/btn_edit2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<View android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/gray"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/selected_address_container"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_cancel"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="52dp"-->
+                        <!--android:text="Cancel"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--style="?android:attr/borderlessButtonStyle"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textSize="16sp"/>-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_ok"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="52dp"-->
+                        <!--android:text="Done"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--style="?android:attr/borderlessButtonStyle"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:background="@drawable/strock_address_green"-->
+                        <!--android:textSize="16sp"/>-->
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

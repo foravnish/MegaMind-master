@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_menu_camera"
+            android:visible="false"
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/addlead"
+            android:icon="@drawable/ic_add_lead"
+            android:title="Add Lead" />
+
+        <item
+            android:id="@+id/addbank"
+            android:icon="@drawable/ic_add_lead"
+            android:title="Add Bank Account" />
+
+
+
+        <item
+
+            android:id="@+id/myDirectIncome"
+            android:icon="@drawable/ic_direct_income"
+            android:title="My Direct Income" />
+
+
+        <item
+            android:id="@+id/myRefferal"
+            android:icon="@drawable/ic_referr_income"
+            android:title="My Referrals Income" />
+        <item
+            android:id="@+id/offers"
+            android:icon="@drawable/offer_icon"
+            android:title="Offers &amp; Coupons" />
+
+        <item
+            android:id="@+id/videos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Video Tutorials" />
+
+
+        <item
+            android:id="@+id/tersuser"
+            android:icon="@drawable/term_icon"
+            android:title="Term of Use" />
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/privacy_icon"
+            android:title="Privacy Policy" />
+
+
+        <item
+            android:id="@+id/discliamer"
+            android:icon="@drawable/discl_icon"
+            android:title="Disclaimer" />
+
+        <item
+            android:id="@+id/refBanlace"
+            android:icon="@drawable/ic_ref_bal"
+            android:title="Referral/Expected Payout" />
+
+        <item
+            android:id="@+id/rating"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Rating &amp; Review" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

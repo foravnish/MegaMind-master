@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="megamindlons.app.megamind">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/id_initial"/>
+
+
+        <activity android:name=".Activittres.TermConditionActivity"></activity>
+        <activity
+            android:name=".Activittres.PopupForRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.PopupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.resetpassword.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.otp.OtpVerfityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.forgotpassword.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.profile.ManageProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragments.offer.OfferDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.SplashAct"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activittres.HomeAct"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activittres.Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.PlayerutubeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activittres.SetPin"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".Utils.InstallReferrerReceiver"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activittres.profile.ProfileAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CameraAct.CropImageActivity"
+            android:label="Crop Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".CameraAct.ImagePickerActivity"
+            android:label="Pick Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".ui.videos.WebViewPayment"
+            android:label="Banner"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

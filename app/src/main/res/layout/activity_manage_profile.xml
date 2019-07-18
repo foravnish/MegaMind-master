@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red"
+            card_view:title="Manage Profile"
+            card_view:titleTextColor="#fff"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/strock_editbox"
+
+                    android:layout_margin="10dp">
+
+
+                    <EditText
+                        android:id="@+id/panCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/grayText"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#fff"
+                    android:textSize="16dp"
+                    android:paddingLeft="3dp"
+                    android:textColor="#444"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/muli"
+                    android:text="PAN Card"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/pancardFrame"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:clickable="true"
+                android:visibility="visible"
+                android:background="#f3f3f3">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagePan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strock_upload"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    app:riv_border_color="#dcdada"
+                    app:riv_border_width="1dip"
+                    app:riv_corner_radius="4dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tap to Upload" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/strock_editbox"
+                    android:layout_margin="10dp">
+                    <EditText
+                        android:id="@+id/aadharCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="number"
+                        android:textColor="@color/grayText"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#fff"
+                    android:textSize="16dp"
+                    android:paddingLeft="3dp"
+                    android:textColor="#444"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/muli"
+                    android:text="Aadhar Card"/>
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/aadhaCardFrame"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:clickable="true"
+                android:visibility="visible"
+                android:background="#f3f3f3">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageAadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strock_upload"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    app:riv_border_color="#dcdada"
+                    app:riv_border_width="1dip"
+                    app:riv_corner_radius="4dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tap to Upload" />
+
+            </FrameLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/strock_editbox"
+                    android:layout_margin="10dp">
+                    <EditText
+                        android:id="@+id/voterId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/grayText"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#fff"
+                    android:textSize="16dp"
+                    android:paddingLeft="3dp"
+                    android:textColor="#444"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/muli"
+                    android:text="Voter Id Card"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/voterFrame"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:clickable="true"
+                android:visibility="visible"
+                android:background="#f3f3f3">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageVoter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strock_upload"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    app:riv_border_color="#dcdada"
+                    app:riv_border_width="1dip"
+                    app:riv_corner_radius="4dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tap to Upload" />
+
+            </FrameLayout>
+
+
+
+            <Button
+                android:id="@+id/submitData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:background="@drawable/strock_grad_red"
+                android:textColor="#fff"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</layout>

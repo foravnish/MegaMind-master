@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.AddLeads">
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Name*"
+                android:inputType="textCapCharacters"
+                android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinGender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/strock_edit"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Approx Age (In years)*"
+                android:inputType="number"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mobileNO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Mobile Number*"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinState"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/strock_edit"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/spinCity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/strock_edit"
+                android:layout_marginLeft="2dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/loanAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Loan Amount / Credit Limit*"
+                android:inputType="number"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/Services"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/strock_edit"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Product Type*"
+                android:inputType="textCapCharacters"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/strock_edit"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/refName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock_edit"
+                android:hint="Refer your Name to The Customer*"
+                android:inputType="textCapCharacters"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawline"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/strock_edit"
+                android:hint="Comments (if Any Max 160 Char)"
+                android:gravity="top"
+                android:inputType="textCapCharacters"
+                android:maxLength="160"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Estimated Earnings For This Leads"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:textSize="12dp"
+            android:visibility="visible"
+            android:fontFamily="@font/muli_bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:text="₹ "/>
+
+            <TextView
+                android:id="@+id/emptAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textSize="22dp"
+                android:fontFamily="@font/muli_bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submitLoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SUBMIT"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/muli_semibold"
+            android:background="@drawable/submit_btn"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

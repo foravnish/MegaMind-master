@@ -179,6 +179,7 @@ public class HomeFragment extends Fragment  {
         myrefer = view.findViewById(R.id.myrefer);
         layoutReferal = view.findViewById(R.id.layoutReferal);
 
+
         myBalance = view.findViewById(R.id.myBalance);
         myExpected = view.findViewById(R.id.myExpected);
 

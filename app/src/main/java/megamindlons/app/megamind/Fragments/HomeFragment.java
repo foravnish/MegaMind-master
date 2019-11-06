@@ -282,7 +282,7 @@ public class HomeFragment extends Fragment  {
 //                }
 
 
-
+Avnish
             }
         });
         myrefer.setText(MyPrefrences.getMyRefrel(getActivity()));
@@ -290,7 +290,6 @@ public class HomeFragment extends Fragment  {
         addLeads.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
 
                 HomeAct.mFragmemnt = "AddLead";
                 Fragment fragment = new AddLeads();

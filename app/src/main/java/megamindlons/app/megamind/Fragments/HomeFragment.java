@@ -282,7 +282,6 @@ public class HomeFragment extends Fragment  {
 //                }
 
 
-//Avnish new Update on Github
             }
         });
         myrefer.setText(MyPrefrences.getMyRefrel(getActivity()));
